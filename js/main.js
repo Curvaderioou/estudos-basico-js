@@ -110,10 +110,11 @@ function setReplace (frase, nome, novo_nome){
     console.log(element.value)
   }
   */
-
+/*
 function clicking() {
   document.getElementById("thankyou").innerHTML = "Obrigado por clicar";
 }
 function redirecionar() {
   window.open("https://www.origamid.com/")
 }
+*/
