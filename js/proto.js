@@ -85,7 +85,7 @@ const pitbull = new Cachorro(true);
 console.log(pug)
 console.log(pitbull)
 
-*/
+
 
 function Cachorro() {};
 
@@ -100,3 +100,4 @@ Cachorro.prototype.xixi = function(){}
 
 
 console.log(viraLata.__proto__)
+*/
