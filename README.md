@@ -1,2 +1,3 @@
-# javascript-des1
-desenvolvimento com javascript
+# javascript-objetos
+desenvolvimento com javascript objetos e prototype
+ 
