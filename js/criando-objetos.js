@@ -69,7 +69,7 @@ console.log(carro.marca)
 console.log(carro.preco)
 
 */
-
+/*
 function Carro(){
   this.marca = "Marca";
   this.preco = 0
@@ -90,7 +90,7 @@ fiat.preco = 1100
 console.log(fiat.marca, fiat.preco);
 
 console.log(Carro)
-
+*/
 /*
 O new cria um novo objeto baseado no nome que eu dei, por exemplo 
 honda = new carro, entao ele vai criar um novo objeto vazio com o nome honda se baseando no seu construtor que é o Carro.
@@ -106,11 +106,63 @@ e por fim ele retorna o novo objeto, honda ={
 
 //podemos entao criar parametros 
 
+/*
 function Cachorro (raca, preco){
+  const precoFinal = preco * 2
   this.raca = raca;
-  this.preco = preco;
+  this.preco = precoFinal;
 }
 
 const cachorroPequeno = new Cachorro("viralata", 4000);
 const cachorroMedio = new Cachorro("boxer", 6000);
 const cachorroGrande = new Cachorro("Pastor", 14000);
+*/
+
+// Transforme o objeto abaixo em um Constructor Function
+/*
+const pessoa = {
+  nome:"Nome pessoa",
+  Idade: 0,
+  andar(){
+    console.log(`${this.nome} andou`)
+  }
+}
+*/
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.Idade = idade;
+  this.andar = function(){
+    console.log(`${this.nome} andou`)
+  }
+}
+
+
+const joao = new Pessoa("joao", 20)
+const maria = new Pessoa("Maria", 25)
+const bruno = new Pessoa("Bruno", 15)
+
+// crie 3 pessoas, joao - 20 anos, Maria - 25 anos e bruno de 15 anos.
+
+
+
+
+//Crie um Constructor Fcuntion (DOM) para manipular listas de elementos do dom, deve conter as seguintes propriedades e metodos.
+
+// elements, retorna nodelist com os elementos selecionados, add class(classe, adiciona a classe a todos os elementos, remove Class, remove a class de todos os elementos
+
+function Dom(seletor){
+ const elementList = document.querySelectorAll(seletor);
+ this.elements = elementList;
+ this.addClass = function(classe) {
+   elementList.forEach((element)=>{
+     element.classList.add(classe)
+  })
+ }
+ this.removeClass = function(classe){
+  elementList.forEach((element)=>{
+    element.classList.remove(classe)
+  })
+ }
+}
+
+const list = new Dom("li")
