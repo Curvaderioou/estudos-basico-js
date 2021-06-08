@@ -101,3 +101,44 @@ Cachorro.prototype.xixi = function(){}
 
 console.log(viraLata.__proto__)
 */
+
+/*
+Crie uma função construtora de pessoas deve conter nome, sobrenome e idade, crie um metodo no protipo que retorne o nome completo da pessoa
+
+liste os metodos acessos por dados criados com nodelist, HTML collection, document
+
+//nodelist - forEach, keys;
+//html collection length
+//document get element, query selector
+*/
+
+function Pessoas(nome, sobrenome, idade){
+  this.nome = nome;
+  this.sobrenome = sobrenome;
+  this.idade = idade
+}
+
+const pedro = new Pessoas("Pedro", " Jr.", 33)
+
+Pessoas.prototype.nomeCompleto = function(){
+  return this.nome + this.sobrenome
+}
+
+//liste os construtores dos dados abaixo
+
+const li = document.querySelector("li")
+
+//li; html collection e se for o queryselector all uma node list
+//li.click; function
+//li,innerText; string
+//li.value; number
+//li.hidden; bololean
+//li.offsetLeft; number
+//li.click(); undefined, nao existe constructor
+
+
+//li.constructor.name e sabemos o que constrói e quais propriedades herdam
+
+// qual o constructor do dado abaixo
+
+//li.hidden.constructor.name; nesse caso ele retorna boolean, mas uma string chamada boolean e nao um valor booleano.
